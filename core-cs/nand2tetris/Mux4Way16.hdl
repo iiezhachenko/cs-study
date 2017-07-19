@@ -16,5 +16,11 @@ CHIP Mux4Way16 {
     OUT out[16];
 
     PARTS:
-    // Put your code here:
+    Nand(a=sel[0], b=sel[1], out=nandSel0Sel1);
+    And(a=sel[0], b=sel[1], out=andSel0Sel1);
+    And(a=nandSel0Sel1, b=sel[0], out=sel12);
+    And(a=andSel0Sel1, b=sel[0], out=sel34);
+    Mux16(a=a, b=b, sel=sel12, out=out12);
+    Mux16(a=c, b=d, sel=sel34, out=out34);
+    Mux16(a=out12, b=out34, sel=sel[1], out=out);
 }
