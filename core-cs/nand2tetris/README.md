@@ -27,3 +27,15 @@ Each folder corresponds to a unit. Files may be copied between units for testing
 * FullAdder
 * HalfAdder
 * In16
+
+## Week 3 - Memory
+
+* Bit
+* Register
+* RAM8
+* RAM16
+* RAM64
+* RAM512
+* RAM4K
+* RAM16K
+* PC
