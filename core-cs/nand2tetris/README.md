@@ -39,3 +39,7 @@ Each folder corresponds to a unit. Files may be copied between units for testing
 * RAM4K
 * RAM16K
 * PC
+
+## Week 4 - Machine Language
+* Fill - Program in Hack assembly language. Fills the screen with black color when and while any keyboard key is pressed. Fills the screen with white color when no keys pressed.
+* Mult - Program in Hack assembly language. Multiplies values provided in 0 and 1 memory registers and stores result in register 2.
